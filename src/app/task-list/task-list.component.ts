@@ -28,4 +28,8 @@ export class TaskListComponent {
       return "bg-info";
     }
   }
+  toggleDone(clickedTask: Task, setCompleteness: boolean) {
+   clickedTask.done = setCompleteness;
+  }
+  filterByCompleteness: string = "incompleteTasks";
 }
